@@ -1,111 +1,112 @@
 <div align="center">
 
-# 🌐 MandirGo
+# 🧾 StickNote
 
-### AI-Based Smart Temple & Pilgrimage Management Platform
+### Smart Shop Ledger & Party Management Platform
 
-**Real-Time Crowd Intelligence • Smart Darshan Booking • Intelligent Temple Operations**
+**Digital Khata • Real-Time Balance Tracking • Automated Payment Receipts**
 
-![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![YOLOv8](https://img.shields.io/badge/YOLOv8-Computer%20Vision-purple?style=for-the-badge)
-![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-Backend-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![React Router](https://img.shields.io/badge/React%20Router-7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
 ![MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
-### Bridging Devotion with Smart Innovation
+### Replacing the Paper Khata with a Smart Digital Ledger
 
-*Building safer, smarter, and seamless pilgrimage experiences through Artificial Intelligence.*
+*Helping shopkeepers track parties, credit, purchases, and payments — all in one place.*
 
 </div>
 
 # 📖 Overview
 
-MandirGo is an AI-Based Smart Temple & Pilgrimage Management Platform designed to modernize temple operations through Computer Vision, Machine Learning, and real-time analytics.
+StickNote is a shop management platform built for small and medium retailers who currently rely on a paper "khata" (ledger) to track parties, purchases, customer credit, and payments.
 
-The platform empowers temple administrations to intelligently monitor crowd density, optimize visitor flow, automate darshan bookings, publish live announcements, and deliver a safer, smarter, and more connected pilgrimage experience.
+The platform digitizes day-to-day shop bookkeeping — adding parties, logging purchases, recording cash payments, managing customer advances, and checking outstanding balances — while giving shop owners instant payment receipts, SMS/email balance notifications, and a secure login system built around each registered shop.
 
-By integrating Artificial Intelligence with modern software architecture, MandirGo enhances public safety, operational efficiency, and decision-making while preserving the spiritual essence of every pilgrimage.
+A dedicated **Admin Panel** lets the StickNote team verify new shop registrations and monitor onboarding, keeping the whole platform centrally manageable.
 
 ---
 
 # 🎯 Problem Statement
 
-Every year, millions of devotees visit temples across India, creating operational challenges for temple administrations and safety concerns for visitors.
+Small shopkeepers across India still track their business manually:
 
-Traditional management systems often struggle with:
+- Paper ledgers that get lost, torn, or miscalculated
+- No easy way to check a customer's outstanding balance
+- Manual, error-prone purchase and payment entries
+- No digital trail of payments or receipts
+- No automated way to remind customers about dues
+- Time-consuming registration and verification for new shops
 
-- Long waiting queues
-- Overcrowding during peak hours
-- Limited real-time crowd visibility
-- Manual administrative processes
-- Delayed communication with devotees
-- Lack of predictive crowd planning
-
-MandirGo addresses these challenges by combining Artificial Intelligence, Computer Vision, and intelligent analytics into a unified digital platform that enables data-driven temple management and a seamless pilgrimage experience.
+StickNote solves this by combining a fast, offline-friendly React interface with a lightweight PHP + MySQL backend, giving every shop its own secure digital ledger — accessible from any device, with instant receipts and balance notifications.
 
 ---
 
 # ⚡ Platform Features
 
-## 🎥 AI Crowd Intelligence
+## 🏪 Shop Registration & Secure Login
 
-- Real-time crowd detection and density analysis using CCTV
-- Intelligent Computer Vision monitoring
-- Continuous occupancy analytics
+- Shop owner registration with payment screenshot verification
+- Unique auto-generated login code per shop
+- Protected, token-based session routes
 
-## 📡 Live Crowd Status
+## 🧑‍🤝‍🧑 Party Management
 
-- Live crowd status updates for devotees
-- Real-time congestion monitoring
-- Better visit planning and reduced waiting time
+- Add, update, and look up parties (suppliers/vendors)
+- Auto-generated Party IDs
+- Quick mobile-number based party search
 
-## 📊 Intelligent Footfall Prediction
+## 🛒 Purchase & Cash Pay Entries
 
-- Footfall prediction using Machine Learning
-- Historical trend analysis
-- Smart crowd forecasting for temple administrations
+- Multi-slot purchase entry (product, price, quantity, auto-calculated total)
+- Cash payment tab with UPI / Cash / Card modes
+- Editable, punch-in style ledger rows inspired by a physical khata
 
-## 📅 Smart Darshan Booking
+## 💰 Customer Advance & Balance Tracking
 
-- Intelligent online darshan booking system
-- Optimized visitor scheduling
-- Reduced queue management challenges
+- Record customer advances against a bill
+- Real-time balance calculation
+- Instant balance lookup by mobile number
 
-## 📢 Event Updates & Notifications
+## 🧾 Digital Payment Receipts & Invoices
 
-- Festival announcements
-- Live event notifications
-- Instant communication with devotees
+- Auto-numbered invoices via an invoice counter
+- Shareable payment status / receipt lookup page
+- QR-based UPI payment support with screenshot upload
 
-## 🚨 Emergency Alert System
+## 📷 Scanner & Screenshot Uploads
 
-- AI-assisted emergency alerts
-- Intelligent fall detection
-- Rapid response support for temple authorities
+- Upload and store payment/scanner screenshots
+- Backend file validation (type & size checks)
 
-## 🖥️ Dedicated Admin Dashboard
+## 📩 SMS & Email Notifications
 
-- Live crowd monitoring
-- Smart booking management
-- Event administration
-- Operational analytics and insights
-- Centralized monitoring and control
+- Automated balance notifications via SMS (2Factor)
+- Lightweight custom SMTP mailer (no external libraries)
+- Receipt delivery over email
+
+## 🖥️ Admin Dashboard
+
+- Central view of all shop registrations
+- Registration verification & approval workflow
+- Live refresh of pending/verified shops
 
 ---
 
 # 🏗️ System Architecture
 
 ```text
-                           Devotees
+                        Shop Owner / Customer
 
                                 │
 
                                 ▼
 
-                    React + Parcel Frontend
+                React (Vite) Frontend — Shop Manager
 
                                 │
 
@@ -115,7 +116,7 @@ MandirGo addresses these challenges by combining Artificial Intelligence, Comput
 
                                 ▼
 
-                     FastAPI Backend Server
+                      PHP Backend (REST Endpoints)
 
                                 │
 
@@ -123,7 +124,7 @@ MandirGo addresses these challenges by combining Artificial Intelligence, Comput
 
           ▼                                           ▼
 
-  YOLOv8 Crowd Detection                 Supabase Database
+   MySQL Database                          SMTP Mailer + SMS Gateway
 
           │                                           │
 
@@ -131,71 +132,94 @@ MandirGo addresses these challenges by combining Artificial Intelligence, Comput
 
                                 ▼
 
-                 Machine Learning Prediction Engine
+                 Registration • Ledger • Receipts
 
                                 │
 
                                 ▼
 
-         Smart Temple & Pilgrimage Management Platform
+               React (Vite) Admin Panel — Shop Admin
 
                                 │
 
                                 ▼
 
-      Live Crowd Status • Smart Booking • Emergency Alerts
+            Registration Verification & Monitoring
 ```
+
 ---
+
 # 🛠️ Tech Stack
 
-| Category | Technology |
-| -------------------------- | ---------------------------- |
-| Frontend | React + Parcel |
-| Backend | FastAPI |
-| Programming Language | Python + JavaScript |
-| Artificial Intelligence | YOLOv8 |
-| Machine Learning | Scikit-learn |
-| Computer Vision | OpenCV + YOLOv8 |
-| Database | Supabase |
-| Authentication | Supabase Auth |
-| API | REST API |
-| Styling | CSS |
-| Version Control | Git & GitHub |
-| Deployment | Netlify |
+| Category              | Technology                          |
+| ---------------------- | ------------------------------------ |
+| Frontend               | React 19 + Vite                     |
+| Routing                | React Router v7                     |
+| Animation              | Framer Motion                       |
+| Icons                  | React Icons                         |
+| Backend                | PHP (REST endpoints)                |
+| Database               | MySQL                               |
+| Email                  | Custom lightweight SMTP mailer      |
+| SMS                    | 2Factor transactional SMS API       |
+| Auth                   | Login-code based sessions (localStorage token) |
+| File Uploads           | PHP file handling (payments/scanner)|
+| Styling                | CSS                                  |
+| Version Control        | Git & GitHub                        |
+| Deployment             | Apache/.htaccess (shared hosting)   |
 
 ---
 
 # 📂 Project Structure
 
 ```text
-MandirGo/
+StickNote/
 
-├── assets/
-│   └── mandirgo-logo.jpeg
-│
-├── backend/
-│   ├── server.py
-│   ├── requirements.txt
-│   ├── models/
-│   ├── videos/
-│   └── README.md
-│
-├── frontend/
+├── shop_manager/                     # Customer/Shop-owner facing app
+│   ├── backend/
+│   │   ├── add_party.php
+│   │   ├── register_user.php
+│   │   ├── login_user.php
+│   │   ├── save_tab_entry.php
+│   │   ├── save_customer_advance.php
+│   │   ├── get_parties.php
+│   │   ├── get_receipt.php
+│   │   ├── upload_scanner.php
+│   │   ├── send_balance_notification.php
+│   │   ├── sms_sender.php
+│   │   ├── smtp_mailer.php
+│   │   ├── db_config.php
+│   │   ├── shopmanager_database.sql
+│   │   └── uploads/
+│   │
 │   ├── src/
+│   │   ├── Components/
+│   │   │   ├── HomePage/
+│   │   │   ├── ShopHomePage/
+│   │   │   └── Invoice/
 │   │   ├── assets/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── utils/
-│   │   ├── legacy/
 │   │   ├── App.jsx
-│   │   └── index.jsx
+│   │   └── main.jsx
 │   │
 │   ├── package.json
-│   └── .gitignore
+│   └── .htaccess
 │
-├── LICENSE
-├── README.md
-└── .gitignore
+├── shop_admin/                       # Admin verification panel
+│   ├── backend/
+│   │   ├── list_registrations.php
+│   │   ├── verify_registration.php
+│   │   ├── db_config.php
+│   │   └── shop_admin_database.sql
+│   │
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   │   └── Dashboard.jsx
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+└── package-lock.json
 ```
 
 ---
@@ -205,155 +229,143 @@ MandirGo/
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/Tanyyy-27/MandirGo.git
+git clone https://github.com/<your-username>/StickNote.git
 
-cd MandirGo
+cd StickNote
 ```
 
 ---
 
 # ⚙️ Backend Setup
 
-Navigate to the backend directory
+Both `shop_manager/backend` and `shop_admin/backend` run on plain PHP with MySQL.
+
+1. Place the `backend` folders on a PHP-enabled server (XAMPP/WAMP/Apache).
+2. Create a MySQL database and import the schema files:
 
 ```bash
-cd backend
+mysql -u root -p your_database < shop_manager/backend/shopmanager_database.sql
+mysql -u root -p your_database < shop_admin/backend/shop_admin_database.sql
 ```
 
-Create a virtual environment
-
-```bash
-python -m venv venv
-```
-
-Activate the virtual environment
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### Linux / macOS
-
-```bash
-source venv/bin/activate
-```
-
-Install the required dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Start the FastAPI server
-
-```bash
-uvicorn server:app --reload --host 127.0.0.1 --port 8000
-```
-
-Backend will be available at
+3. Update database credentials in:
 
 ```
-http://127.0.0.1:8000
+shop_manager/backend/db_config.php
+shop_admin/backend/db_config.php
+```
+
+4. Configure SMS and email credentials:
+
+```
+shop_manager/backend/sms_config.php
+shop_manager/backend/mail_config.php
+```
+
+5. Ensure the `uploads/` folder inside `shop_manager/backend` is writable for payment & scanner screenshots.
+
+Backend will be available at:
+
+```
+http://localhost/shop_manager/backend
+http://localhost/shop_admin/backend
 ```
 
 ---
 
 # 💻 Frontend Setup
 
-Navigate to the frontend directory
+## Shop Manager App
 
 ```bash
-cd frontend
-```
-
-Install project dependencies
-
-```bash
+cd shop_manager
 npm install
-```
-
-Start the development server
-
-```bash
-npm start
-```
-
-or
-
-```bash
 npm run dev
 ```
 
-Create a production build
+## Shop Admin Panel
+
+```bash
+cd shop_admin
+npm install
+npm run dev
+```
+
+Create a production build:
 
 ```bash
 npm run build
 ```
 
-The frontend will be available at
+The frontend will be available at:
 
 ```
-http://localhost:1234
+http://localhost:5173
 ```
 
-(or the URL generated by Parcel)
+(or the URL generated by Vite)
+
+> **Note:** Update the `API_BASE` constant at the top of `ShopHomePage.jsx` / `Dashboard.jsx` to point to your backend URL if it differs from the local defaults.
 
 ---
 
 # 🌐 Platform Highlights
 
-### 🎥 Real-Time Crowd Intelligence
+### 🏪 Digital Shop Onboarding
 
-Monitor crowd density through CCTV feeds using AI-Based Computer Vision and receive instant occupancy insights.
+Shop owners register with basic details and a payment screenshot, then receive a unique login code — no passwords to remember.
 
-### 📊 Predictive Footfall Analytics
+### 🧑‍🤝‍🧑 Party & Purchase Ledger
 
-Forecast visitor traffic using Machine Learning models to improve planning, volunteer allocation, and resource management.
+Add parties, log purchases across multiple product slots, and let totals auto-calculate from price × quantity.
 
-### 📅 Smart Darshan Experience
+### 💰 Customer Advance & Balance Check
 
-Enable devotees to book darshan slots digitally, reducing waiting time and improving overall crowd distribution.
+Track advance payments per customer and instantly look up outstanding balances by mobile number.
 
-### 📢 Intelligent Communication
+### 🧾 Instant Digital Receipts
 
-Deliver live announcements, event updates, and important notifications directly to devotees in real time.
+Every payment generates a shareable, lookup-able receipt page — no more handwritten slips.
 
-### 🚨 Safety & Emergency Monitoring
+### 📩 Automated Notifications
 
-Strengthen temple safety with emergency alerts and AI-assisted fall detection for faster response during high-footfall events.
+Balance reminders go out to customers automatically over SMS and email, keeping collections on track.
 
-### 🖥️ Centralized Administration
+### 🖥️ Centralized Admin Verification
 
-Manage crowd monitoring, bookings, announcements, events, and operational insights from a unified administration dashboard.
+The Shop Admin dashboard gives the StickNote team a live view of every shop registration awaiting verification.
 
 ---
+
 # 💡 Core Capabilities
 
-### 🎥 AI-Based Crowd Intelligence
+### 🏪 Shop Registration & Auth
 
-Monitor temple crowd density in real time through CCTV feeds using Computer Vision, enabling temple administrations to make faster, smarter, and data-driven decisions.
+Secure, code-based shop onboarding with payment proof verification and protected session routes on the frontend.
 
-### 📊 Intelligent Footfall Prediction
+### 🧑‍🤝‍🧑 Party & Customer Management
 
-Leverage Machine Learning models to forecast visitor trends, optimize resource allocation, improve volunteer management, and prepare for peak pilgrimage periods.
+Structured party/customer records with auto-generated IDs, mobile-based lookup, and editable ledger rows.
 
-### 📅 Smart Darshan Management
+### 🛒 Purchase & Cash Pay Tracking
 
-Digitize the darshan process with an intelligent booking system that minimizes waiting time, optimizes visitor flow, and enhances the overall devotee experience.
+Multi-slot purchase entries with automatic price × quantity totals, plus a dedicated cash-pay tab for daily collections.
 
-### 📢 Real-Time Communication
+### 💰 Advance & Balance Management
 
-Provide devotees with instant announcements, festival updates, event notifications, and important alerts through a unified digital platform.
+Record customer advances against bills and compute real-time outstanding balances.
 
-### 🚨 Emergency Response System
+### 🧾 Receipts & Invoicing
 
-Enhance temple safety through AI-assisted emergency alerts and fall detection, enabling rapid response during festivals and high-footfall situations.
+Auto-incrementing invoice numbers with a public lookup page for customers to check payment status.
 
-### 🖥️ Centralized Admin Dashboard
+### 📩 SMS & Email Automation
 
-Empower temple authorities with a comprehensive dashboard for crowd monitoring, booking management, event administration, operational insights, and real-time decision making.
+A custom lightweight SMTP mailer and 2Factor SMS integration handle balance notifications and receipt delivery without heavy external dependencies.
+
+### 🖥️ Admin Oversight
+
+A separate React admin app lists and verifies shop registrations, keeping platform growth centrally managed.
 
 ---
 
@@ -361,48 +373,43 @@ Empower temple authorities with a comprehensive dashboard for crowd monitoring, 
 
 This project demonstrates practical experience in:
 
-- Artificial Intelligence
-- Machine Learning
-- Computer Vision
-- YOLOv8 Object Detection
-- FastAPI Development
-- React Application Development
-- REST API Design
-- Real-Time Analytics
-- Smart Infrastructure Systems
-- Scalable Software Engineering
+- React 19 + Vite application development
+- React Router v7 protected routing
+- REST API design with plain PHP
+- MySQL schema design for ledger-style data
+- File upload handling & validation
+- Custom SMTP mail delivery (no third-party libraries)
+- SMS gateway integration
+- Multi-app monorepo structure (customer app + admin app)
+- Token-based client-side authentication
 
 ---
 
 # 📈 Future Roadmap
 
-### 🤖 AI & Analytics
+### 🤖 Automation & Insights
 
-- Advanced crowd prediction models
-- Predictive footfall intelligence
-- AI-driven operational analytics
-- Smart resource optimization
+- Automated daily/monthly ledger summaries
+- Sales & purchase analytics dashboard
+- Smart balance-due reminders based on due dates
 
-### 🌐 Smart Infrastructure
+### 🌐 Platform Growth
 
-- Multi-temple management platform
-- Volunteer management system
-- Digital donations & seva integration
-- Smart parking management
+- Multi-shop management for chain retailers
+- Role-based access (owner, staff, accountant)
+- Bulk import/export of parties & entries
 
 ### 📱 Digital Experience
 
-- Native Android & iOS applications
-- AI-powered virtual assistant
-- Personalized devotee notifications
-- Live navigation and guidance
+- Native Android app for shop owners
+- WhatsApp-based receipt delivery
+- Offline-first entry with background sync
 
-### 🔗 Intelligent Ecosystem
+### 🔗 Security & Scale
 
-- IoT device integration
-- Edge AI deployment
-- Real-time monitoring dashboards
-- Advanced emergency response automation
+- OTP-based login alongside login codes
+- Cloud storage for payment/scanner uploads
+- API rate limiting & audit logs
 
 ---
 
@@ -440,35 +447,12 @@ This project is licensed under the **MIT License**.
 
 ---
 
-# 👨‍💻 Founder
-
-**Tanmay Yenpure**
-
-### Founder & AI/ML Engineer
-
-*Building AI-Based Smart Infrastructure for the Future of Pilgrimage Management.*
-
-🌐 **Website**  
-https://mandirgo.com
-
-📷 **Instagram**  
-https://www.instagram.com/mandirgo_official?igsh=MTRpeTB0NXZrMWo3dg==
-
-🐙 **GitHub**  
-https://github.com/Tanyyy-27
-
----
-
 <div align="center">
 
 ## ⭐ Support the Project
 
-If you found **MandirGo** valuable, consider giving this repository a **Star ⭐** and sharing it with the community.
+If you found **StickNote** useful, consider giving this repository a **Star ⭐** and sharing it with the community.
 
-### Empowering temples with AI-Based crowd intelligence and building the future of smarter pilgrimage experiences.
-
-### Bridging Devotion with Smart Innovation.
-
-**Engineered by Tanmay Yenpure**
+### Digitizing the shopkeeper's khata, one ledger at a time.
 
 </div>
